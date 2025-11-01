@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+
+<script>
+// Convert code blocks with language-mermaid to divs with class mermaid
+document.addEventListener('DOMContentLoaded', function() {
+  // Find all mermaid code blocks
+  const mermaidCodeBlocks = document.querySelectorAll('code.language-mermaid');
+  
+  mermaidCodeBlocks.forEach(function(codeBlock) {
+    // Create a new div with mermaid class
+    const mermaidDiv = document.createElement('div');
+    mermaidDiv.className = 'mermaid';
+    mermaidDiv.textContent = codeBlock.textContent;
+    
+    // Replace the parent pre element with our new div
+    const preElement = codeBlock.closest('pre');
+    if (preElement) {
+      preElement.parentNode.replaceChild(mermaidDiv, preElement);
+    }
+  });
+  
+  // Initialize Mermaid after conversion
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'default',
+    securityLevel: 'loose'
+  });
+});
+</script>

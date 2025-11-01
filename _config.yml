@@ -1,0 +1,15 @@
+title: Light EHR Models
+description: >
+  Description.
+
+minima:
+  date_format: "%b %-d, %Y"
+
+header_pages:
+ - models/patient.md
+
+theme: minima
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
