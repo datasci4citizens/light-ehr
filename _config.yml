@@ -5,9 +5,6 @@ description: >
 minima:
   date_format: "%b %-d, %Y"
 
-header_pages:
- - models/patient.md
-
 theme: minima
 
 plugins:

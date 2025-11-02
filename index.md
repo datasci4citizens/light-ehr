@@ -3,4 +3,5 @@ layout: home
 title: Light EHR Models
 ---
 
-Main page.
+* Patient
+  * [Cicatrizando](models/patient/cicatrizando/)
