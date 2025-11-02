@@ -42,7 +42,7 @@ your model
 
 * Update the `index.md` in the root with a link to your model. The bullets hierarchical structure follows the folder's hierarchical structure.
 * The link is in Markdown and will address the permalink, as in the example:
-~~~markdown
+<pre>
 * Patient
   * [Cicatrizando](models/patient/cicatrizando/)
-~~~
+</pre>
