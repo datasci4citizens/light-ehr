@@ -1,4 +1,8 @@
-# New Model Tutorial
+---
+layout: page
+title: New Model Tutorial
+permalink: /docs/tutorial/
+---
 
 ## Terms
 
