@@ -1,3 +1,10 @@
+---
+layout: mermaid
+title: Comorbidity/Cicatrizando
+permalink: /models/comorbidity/cicatrizando/
+---
+
+~~~mermaid
 classDiagram
     direction LR
     class VirtualComorbidity {
@@ -20,3 +27,4 @@ classDiagram
     }
 
     VirtualComorbidity --|> Observation : binds(row_observation)
+~~~
