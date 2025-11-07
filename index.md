@@ -7,3 +7,6 @@ title: Light EHR Models
 
 * Patient
   * [Cicatrizando](models/patient/cicatrizando/)
+
+* Comorbidity
+  * [Cicatrizando](models/comorbidity/cicatrizando/)
