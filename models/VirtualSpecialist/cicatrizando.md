@@ -4,36 +4,43 @@ title: VirtualSpecialist/Cicatrizando
 permalink: /models/VirtualSpecialist/cicatrizando/
 ---
 ~~~mermaid
-classDiagram
-    direction LR
-
-    class VirtualSpecialist {
-        <<VirtualModel>>
-        +specialist_id: Integer (Key)
-        +specialist_name: String
-        +user_id: Integer
-        +birthday: Date (null=True)
-        +speciality: String (null=True)
-        +city: String (null=True)
-        +state: String (null=True)
-    }
-
-    class Provider {
-        <<OMOP Table>>
-        +provider_id: Integer (PK, from specialist_id)
-        +provider_name: String (from specialist_name)
-        +provider_birthday: Date (from birthday)
-        +provider_user_id: Integer (from user_id)
-        +specialty_string: String (from speciality)
-    }
-
-    class Location {
-        <<OMOP Table>>
-        +location_id: Integer (PK, from specialist_id)
-        +city: String (from city)
-        +state: String (from state)
-    }
-
-    VirtualSpecialist --|> Provider : binds(row_provider)
-    VirtualSpecialist --|> Location : binds(row_location)
+graph LR
+    %% Virtual Model
+    VS[VirtualSpecialist]
+    
+    %% Virtual Fields
+    VS --> specialist_id[specialist_id]
+    VS --> specialist_name[specialist_name]
+    VS --> user_id[user_id]
+    VS --> birthday[birthday<br/>nullable]
+    VS --> speciality[speciality<br/>nullable]
+    VS --> city[city<br/>nullable]
+    VS --> state[state<br/>nullable]
+    
+    %% OMOP Tables
+    PROV[Provider]
+    LOC[Location]
+    
+    %% Mappings to Provider
+    specialist_id --> |provider_id<br/>KEY| PROV
+    specialist_name --> |provider_name| PROV
+    user_id --> |provider_user_id| PROV
+    birthday --> |provider_birthday| PROV
+    speciality --> |specialty_string| PROV
+    
+    %% Mappings to Location
+    specialist_id --> |location_id<br/>KEY| LOC
+    city --> |city| LOC
+    state --> |state| LOC
+    
+    %% Styling
+    classDef virtualModel fill:#e1f5ff,stroke:#01579b,stroke-width:3px
+    classDef virtualField fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    classDef virtualFieldNull fill:#fff9c4,stroke:#f57f17,stroke-width:2px,stroke-dasharray: 3 3
+    classDef omopTable fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    
+    class VS virtualModel
+    class specialist_id,specialist_name,user_id virtualField
+    class birthday,speciality,city,state virtualFieldNull
+    class PROV,LOC omopTable
 ~~~

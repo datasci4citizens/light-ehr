@@ -39,3 +39,4 @@ graph LR
     class comorbidity_id,patient_id,specialist_id,comorbidity_type virtualField
     class OBS omopTable
     class CONST1,CONST2,CONST3 constant
+~~~
