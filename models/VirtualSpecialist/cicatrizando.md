@@ -1,3 +1,9 @@
+---
+layout: mermaid
+title: VirtualSpecialist/Cicatrizando
+permalink: /models/VirtualSpecialist/cicatrizando/
+---
+~~~mermaid
 classDiagram
     direction LR
 
@@ -30,3 +36,4 @@ classDiagram
 
     VirtualSpecialist --|> Provider : binds(row_provider)
     VirtualSpecialist --|> Location : binds(row_location)
+~~~

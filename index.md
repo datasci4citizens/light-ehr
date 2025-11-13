@@ -5,8 +5,17 @@ title: Light EHR Models
 
 * [New Model Tutorial](docs/tutorial/)
 
-* Patient
-  * [Cicatrizando](models/patient/cicatrizando/)
+* VirtualPatient
+  * [Cicatrizando](models/VirtualPatient/cicatrizando/)
 
 * Comorbidity
   * [Cicatrizando](models/comorbidity/cicatrizando/)
+
+* VirtualSpecialist
+  * [Cicatrizando](models/VirtualSpecialist/cicatrizando/)
+
+* VirtualWound
+  * [Cicatrizando](models/VirtualWound/cicatrizando/)
+
+* VirtualTrackingRecords
+  * [Cicatrizando](models/VirtualTrackingRecords/cicatrizando/)
