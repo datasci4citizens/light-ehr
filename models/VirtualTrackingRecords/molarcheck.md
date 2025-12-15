@@ -1,7 +1,7 @@
 ---
 layout: mermaid
 title: VirtualTrackingRecords/MolarCheck
-permalink: /models/virtualtrackingrecords/molarcheck/
+permalink: /models/VirtualTrackingRecords/molarcheck/
 ---
 ~~~mermaid
 graph LR

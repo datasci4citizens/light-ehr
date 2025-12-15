@@ -7,7 +7,7 @@ title: Light EHR Models
 
 * VirtualPatient
   * [Cicatrizando](models/VirtualPatient/cicatrizando/)
-  * [MolarCheck](models/VirtualPatient//molarcheck.md/)
+  * [MolarCheck](models/VirtualPatient//molarcheck/)
 
 * Comorbidity
   * [Cicatrizando](models/comorbidity/cicatrizando/)
@@ -21,10 +21,10 @@ title: Light EHR Models
 
 * VirtualTrackingRecords
   * [Cicatrizando](models/VirtualTrackingRecords/cicatrizando/)
-  * [MolarCheck](models/VirtualTrackingrecords/molarcheck/)
+  * [MolarCheck](models/VirtualTrackingRecords/molarcheck/)
 
 * Mih
-  * [MolarCheck](models/Mih/molarcheck.md/)
+  * [MolarCheck](models/Mih/molarcheck/)
 
 * Images
-  * [MolarCheck](models/Images/molarcheck.md/)
+  * [MolarCheck](models/Images/molarcheck/)

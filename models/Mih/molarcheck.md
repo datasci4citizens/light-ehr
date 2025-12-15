@@ -1,7 +1,7 @@
 ---
 layout: mermaid
-title: mih/MolarCheck
-permalink: /models/mih/molarcheck/
+title: Mih/MolarCheck
+permalink: /models/Mih/molarcheck/
 ---
 ~~~mermaid
 graph LR
